@@ -1,0 +1,18 @@
+{
+	"required": true,
+	"package": "com.containercrafting.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"AbstractContainerMenuMixin",
+		"ChestMenuMixin",
+		"HopperMenuMixin",
+		"ShulkerBoxMenuMixin",
+		"QuickMoveMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

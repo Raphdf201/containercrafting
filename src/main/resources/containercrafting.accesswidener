@@ -1,0 +1,6 @@
+accessWidener v2 official
+
+# Menu helpers used from GridLogic (all three are protected in vanilla and not overridden anywhere)
+accessible method net/minecraft/world/inventory/AbstractContainerMenu addSlot (Lnet/minecraft/world/inventory/Slot;)Lnet/minecraft/world/inventory/Slot;
+accessible method net/minecraft/world/inventory/AbstractContainerMenu moveItemStackTo (Lnet/minecraft/world/item/ItemStack;IIZ)Z
+accessible method net/minecraft/world/inventory/AbstractContainerMenu clearContainer (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/Container;)V

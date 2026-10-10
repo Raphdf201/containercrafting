@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "containercrafting",
+	"version": "${version}",
+	"name": "Container Crafting",
+	"description": "Shows a 2x2 crafting grid beside chests, barrels, shulker boxes and hoppers. Required on the server, optional on clients.",
+	"authors": [
+		"Raphdf201"
+	],
+	"license": "MIT",
+	"environment": "*",
+	"accessWidener": "containercrafting.accesswidener",
+	"entrypoints": {
+		"main": [
+			{
+				"adapter": "kotlin",
+				"value": "com.containercrafting.ContainerCrafting"
+			}
+		],
+		"client": [
+			{
+				"adapter": "kotlin",
+				"value": "com.containercrafting.client.ContainerCraftingClient"
+			}
+		]
+	},
+	"mixins": [
+		"containercrafting.mixins.json",
+		{
+			"config": "containercrafting.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}
